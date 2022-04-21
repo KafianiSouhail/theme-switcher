@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+@import '../header/header.component';
+
+@mixin item-theme($theme) {
+    $accent: map-get($theme, accent);
+    $background: map-get($theme, background);
+    $border-color: mat-color($background, card);
+    $text-color: mat-color($background,color);
+  
+    .item {
+      background-color: mat-color($accent);
+      border: 1rem solid $border-color;
+      padding: 2rem;
+      min-height: 200px;
+      min-width: 200px;
+  
+      &-card{
+        color: $text-color;
+        line-height: 2.4rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+
+
+  

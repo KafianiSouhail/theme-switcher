@@ -1,0 +1,5 @@
+@import '../app/components/item/item.component';
+
+@mixin components-theme($theme) {
+    @include item-theme($theme);
+}
